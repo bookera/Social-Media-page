@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Social Media</title> 
+        <link
+         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+         rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+         crossorigin="anonymous">
+         <link href="css/reset.css" rel="stylesheet" >
+         <link href="css/main.css" rel="stylesheet" >
+    </head>
+    <body>
+        <header>
+            <div class="logo-area">
+               <a href="index.html">logo</a>
+            </div><div class="menu">
+                <ul>
+                    <li>
+                        <a href="chloe.html"> 
+                           Chloe
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="chloe.html">
+                            home
+                        </a>
+                    </li>
+                </ul>
+            </div><div class="icon-links">
+                <ul class="quick-options">
+                    <li>
+                        <a href="chloe.html"> 
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                        </a> 
+                    </li>
+                    <li>
+                        <a href="chloe.html">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="chloe.html">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="privacy">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                </div>
+            </div><div class="search-area">
+                <ul>
+                    <li>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <input type="text" name="search"> 
+                    </li>
+                    <li>
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <section id="top-area">
+            <div class="profile-info">
+                <div class="user-img">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhUQDxAPEA8PDxAQDw8PDw8VFhAQFRUWFxcVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGBAQFyseHx0rLS0tLS0tLSstLS0tKy0tLSstLS0rLS0tLS0rKy0tLSsrLS0tLS0tLSsrKy0tLS0tLf/AABEIANMA7wMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAABAAIDBAUGB//EAEIQAAIBAgQDBAgDBAgHAQAAAAABAgMRBAUSITFBUQZhcZETIjJCgaGx8AfB0SNScuEUJDNTYmPS8TRDc5KTosIV/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwUEBv/EACsRAAICAgEDAgUEAwAAAAAAAAABAhEDITEEEkEFURMiMoGRIzOh0UJhcf/aAAwDAQACEQMRAD8A6ocho4+KR0hwRqCi0xCaAOYCigCDYQhCCBBABCbKeaZlTw9N1Kskopc2eU9o+22JrtwpSlRpcFpk1KS+G6R6cHTzyv5fyJtI9QzLPMNQ2r16cG+EW7t/BbmDi/xDwMNoupU/hpyS85WPJ2pN3d5N8ZNtt/MsUsDfk7dWrI6MPToeW3/Bm8h31T8TqXu4ao4/vSqR+iTNTKe3FCqr1HCktuMuvI8zllytxXlt5kFLDRjx33d/9zSXp+JqloSyP2Pd8Ni6dRaqc4zXWMkywmeD4DE1KUlKlUnTkucZNPl923O/yLtpPUqeLirSdlWitNv449O9Hjz9BPGrjtFRmpHexY4r0qie6aae6a5rqTxZzWhseAIAEIILhAADkNCACY1jhrAAWAFguQMgYhBJLChw1MNykIcICHGiAAggGAipmmYU8PSlWqu0Yp+Mn0XeWzyj8Qs3lXr+gg36Khs7e9Pn+nma4MXxZ9oN0rMPtDn1bGVHOb0007U6a4RX0b7ypgMvc3tw5yf5E2Cwak7+6trr6LvN/D4deFuXKO/zZ9BCKiqiqRg7b2VsPgox9mOp9ZPj8S1PDJbyaS5IM6m9o72fH9SriGr3k3OT6cPvwNLHRWxlaK9mOrvl/MzYTnUdreXBGpQy+rVkkoJJuy2b+psLAQoRal/apK6tsu4CWc7WwcVDU7a07aWpfB35jKULq97fD6fyLmKhKbvw8Ntu4bPBPTbXw4pr5jvVCrydD2J7SOnJYeu3ok7U5N+y3yv0fyPSacjwScpQe91Z+TPVexOd/wBIopSf7SnaM+/o/I43XdP2vvRtF2dYmJjIMecxjEhCEIQhIQkABAFgABshobCsSMhAwXCSWEKAFDQDhw24TRCCIQigKuaYpUqU6j92LZ4xUk5ydvbqSlKUnyV7t/M9H/ELE6cOqd7OpNJrqlu/y8zzjWob+9P5QX6ux0+ghpyIm/BoYamlaKdl3+bfcTVZuTUI7QW11z8OhnUKzbsuL4v/AAo0suoSqSUY87Lwj9/mdMhKyzhaEpepTgm2vBK/XqzeyzsdKT1VJtvokkjochyKNOKbXrPjfmdJSw9uQRtltJGDgchhStpW6XExu0fZ7U3UV93ujvoURmKw91ZovtJ7keOVMDpvdX2sZOOSts9152+/oeoZvkCkm4r4foee57lk4Nuz8Uvin3NMluh0cvXravVlx6mx2BzF0MSoyfqVfUd+TfD5/UxsTR524cUHC7OM+cZRfkzLMlKDi/JK5PfKZKVsJK8YvrFMsnzbNGIQhCEISEC4AOAxAYAADCxohkCCNSHGaLCIAUMByHJDRyLQg2EFAZYHBfiA3KpCPSDt3OTt+XyODxc7zduHBeETtO31a1fb+7SXxucrQwra1ddSO70Uf00Z5OR2Ap7Nvi2oru5ncdisBeTm47J2RyOHpXnpir2b+L+0jocDh8zpwtSU7cfVnSfyuevtsUXR6zhaKaLioo8sy/tBmNKVqsW1dXUoWfDqtj0TLcw9JFPqi1S0KSfJpKIJ0yjmGLcItrilscFic5zGU3oc1HV6umO9reBXchKLezvsTBHOZtlsKieyMmlUzaW7c0uWp00/KxNGtjoP9tBVIc3FR1LyImi4HB9ospdJuy23Xw+/oYOGp726nqOf0FUpt25XPN9Fp2tx3XwPPPcRyVM9hyS7ow/6cfoaFjM7M1NWHg/8NvLY1D5+apsGCwAsRmAGBIcIAAwDmNYANbEhWEyRla4UNCZ2aDkOQ0KZSYh9wjLhRViHgBcEpFJgebds4OWJs+SW3XjZfMz8W9MbLi3svn+h0PauknOM7W0xtJ247u31OTxNbXOy4LZW+/A7/SS/SRE1skp1HBarPZ32Te5tU84xVCjDFSi1QlUcI7tPa13ZJtLc2Oz2Qxq0vXW0ro1aHZicV6Jz10Lp+imrxuu49sWDi/DIcgz2VeOqcJOlKp6KFbS9MpcuNmr3XFI6rLH6zjwaZBgcqUYqLSVNcIJWin3Ilwb/AG9+pTF4LOZbPT9Dl83zacNao05TdKnKpNrhGMVfj1Ovrb1b95Qx+Qyb1U3a6a2S3vxv1BLyCeqPP8v7V4rESdKhH0lSMZTnFO2hRbvF64JN2SfqtrfiamQ59Ots0+jvFrc2aHZycL6I06TlHTKVKmouS77F3AZNCinZbve76kyHG1yzJzKPqS/hf0PNYUdUoSt++m/mj03tHJKnL+GX0OI7P005+jlveDt3SMJtKErLa2ju+y3/AA8eV7v5mtIoZNQ9HD0a4Qdl4Oz/ADNBo+ek72RLkjYBzGsyAIgIA7AcxjHMaACAxMAhlVBGocYGg4KY1MVyrEPCMTCmUmA65Bia6gm5NJJXbfT4kzZ5/wBrIOpiJwrSap6YunFStqXNJLi79eBrhh3yq6Ayu1OfKtP0dB60vanHh4dLIx8FF60u+N/ibeHwVNepTinutWnm+UUylmeGlSdvf1xlNLfSlyZ3sPbGKSId8nrfZqCVOKXJI6alBHC9m8d6sbvkdjhcSmeuLDIr2S412iZmWK9RsuZrVSpt3+2U8gxFNtpSTae9mmV5JX0l+o7TNahK6RjYurHVs14XL+FbUU+qKi9kSWi1UijPxm1yzPEoy8wxApseOOzlu1M7x09djmMqo6MRGfu8OfG7t9GdLj8NKrqaaWlX3v8AkMWVWWnZzcXLb967sl8GznZs0VcbPTRv4B3TlzlLh05L6FlmTk2J1erwnBWa6x5P75o1jkNVoynyMkMY+QxmTJAIQCBhYBMQ7ADEkJBBDKCY9MjHJmRqOEIFwEEKY1yApBYBqPb74nnvbau5V40o7ysrS34t8W+Wx6DJ3X0OF7V0LVqVVRvphGE773d29+tj19G18QHwDs/FwjpitVVuynyV+nz35mn/APjaYVnU9apOlO+1+MX8728i3lVCLgpU7399P2k/08DTi9S72tEvHrY3zZ23opR0ZeWUdEtC4WjKPg0mdPhqtjjMyzFUpULradNRv4JHRZdi4zVup1ulyOeNNmbNuVWNROLtJPZp8GZ9Hs1R1upQl/R6nvOlpSn/ABRez8THzjL6lOWulXqwpy3lFPUk+t3ul3XsHL8DiW1KlioXTXtxlF+ak7+R7KPRh6bvg5d1HVwyXDu0pwjOps3UqWcm10b4LuReq4nSuStw8DlMTgattdTErU/dppt+b4FvLctlP+1qValPlCcvVk+9K113DFl6VRj3Odmv6bVuini0TSpKGy2XJGPmmYqC3McklFNvweeK9h87xpzlH2tE5La/CLtsOwDcoqo+cYpPuSV/ncipVPSU24NaZQklJb7WsT5dNKjB7JKlHi7JJJcT55zcrfuynoz60PR4laeFWMpRXeuKfd/qZvpmPhqcqtT00lanGLjTTVnO7V5W5LZJdd2a6Rm+SJsTGMexjM2SAAWAkYgMTAIAoTABsLAopjkNQTJG5JcawJgbKEFjRCFVjoSZm5zgPSRuldqzt1s77d9rmkIqDcXY6MyMdEU4e1a6/wAS5plnBVYyWtey7SS6d3mmNxMVZpbOLjKPdeXAZl0fVnyTnO3d9u56pztX7DPPPxHxElXVG+1FWUlzb3X5Gl2Nz9VEoydqkbKS696Mj8RIqeKlUhdKcYXi3f1rbvzOf7P6lWenZqDe3ij6DAo/CTieVtqR79gKiqKz3XeWKfZ2L9lyiukZM4Lsx2lUZKFV2lw8T07LsxhJJppnoi0ylKUdxZFhuz8Y7ycpfxSbL0qSitiZ46FuJgZvncVtF3lySHJpE905/Uxua41La55v2yxU/S0oqTTcZyaT8F+p2VGlKfrS4nPZ5kzq4ui/+Wo2n8JXsePNNL5pcGlapHQ9kqE4YWnGptJpu3RN3SJcjTnSi5L1IpwjF89Ls2+7bZF7D7Kz/wBijlqnRWiovUcpShJe7qk24y8+PecJTck2uW/7A10xyYyLXLgEz4MxzYxsNgCYAYB1hNCoYxiC0BkgNAwgZLApXFcagmaZuOuADBcodBuJMZcVxjHuQHNc2hjYxopNeQGyWqV+SVlfm+N34EigoxshJibKlO1SGec9q8LorXl7yuvEzOzmCTqza3tFL4t3/I67txl06kYypxcnF72t8Pqyl2WyiVKFp+3JuUu7hZfA7/RZFLCvweWcfnKWYZU+MVug5fmuLperGcrLk9zt6WCT5BWRRvfSeofBlYLG4urtKbS7lY3cuy3e8rt9XxL+Cy2MeRrUKFuQ0rByK0cOkuBnV6VpJ95uVUUsTQuY58XfBxCMiGBKV1PTtLbvHqTb22S59fA+enjljlUtFMijTSqL0ba3/aJP1ErdOUuHAvJkUUlwHonuJkx4gCGSETBcGoLATGMLY0hsYgMIiaAzwkeoWowUkbj2wNjHIZJld4yS41si1Bchd4xzkDURTnbduyVrt8rtL6tEaq39lfF7GuPFkyfTFsLLGoa63KK1PovzYKcYv25bdDQo16EFs0dPp/TvOR/Yhz9ijUwUnFyn8I8kDAYO8uBaxGP17RTt4Ms5faO9nvxVuHejr44Qgqjoyd8iWH0s0KER9RxlwJqFHY1rZNj4RRID0TQSiSJQuwVaewZYlR5XKNXHyfuSty4eYm0hpNks8MmrFOeCnF+o9v3Xw/kSrGz/ALuXmv1D/TZ/3UvkY5IY5qpI0VoremttNOL80SwqJ8Gn4MhxHppcKdl3sglgJcWrM5uT0+LfyMfamaFxXMedWdNxWp2lUhCz39qSX5kkcxl70Fa7tZ8uWz5nln0eWO1sXaabYGypTx8HtfS+ktvmWLnjkpRdNUKqDcNxoiUwC2C41sFxOQGaIVxrZ5DcLYGwNmbmWIbfoovfjJ93Q3wYZZZqKC6JquNV7RWp9eXmGnGcuMmu5bCwOD2Nahhj6DD0OLH4t/7IcjAzzDThh51KUpKdNKbtxlGLUpR8GkdVgcBTlFSXBpNeD3IMRg9UWuTi013NWGdmqsnhqLas/RQTSd7NKzV+5o6MYpLjgyb3ovzwMF7qI1SgvdRYqVyspblaGrLdHDx6FyOHiinSmWYVC1RLsdKj0+JMqewaUhVH0+KKomxlWvtYbSg2GNO77yRR8dmKmO0BYdPiiRYaPND4sTqFUibZFOnBciPV0RJKaK9SoS6GidLm+BQx+JXCIKtd8CuoXM3ItROdzqpJ1cNBe/iHL4Qg2/qjTWFb5FbG0r4/Cx5Qo4qo/wD0ivqdHGmhOGkCltmDUwJFT103tdx5xf5dDpVRRTxmGVjDL08ZKmjRTshp1FJJrgxMqYd6ZOPJ7/FFs+cz4njm4ktAsAcxtzEDKuC4ANmFGwqk0k2+CTb+Bk5fFzk5vjJ3LObVLU31k1HzYsqhsju+lYqjKf2ImzdwdLY0KcCthUW7nYRmxzsc/wBiX/UaK6Ka+GuRtzqGN2VssLSUeGhvzk2Veia2akwQiSOI+MQRYEPjMKFoKETQxBJGuV1SHxosLYtFhVvJpp/f3wDLFc+pC6TF6BjthSHPEi9MMWHYXTDYaDqGyHWE0ICu4j4ofpGzJoZj0t8fL/KwcV/5Kj/0G4mYGCl/XMTLpTwsPlUl/wDRtQmU2TRbpkeIQ+mxtZDfAIwsVG0k+jRNcZmKBCV0n3HA9UhTUjTwPbBca5DdRx3IRmXGtibGsSRuZ2byvoj1k35L+Zo5dDZGRj5XqpdI383/ACN3L4n0/Qx7cETGXJr4dFhkVEmke0ko4ypaLfRNlDs1th6a0OnaFvRttuDu7q7GZ7i9EKnVUpSXjYl7O1pVKNOctpTpxlJLq1dgloHyblOI9QDTRLY0SFZBpJIjtIkgCySmWIIrxLEGUiGGaBcjrTsQqYNgkWrkcyNTHJhYxjCkSKJIoCodkLiQVkXXEqYhEyQJnL5dW/b4p/59OP8A20YfnI3cNO5yUVOm61SacfTYurKF+cNUaal4PQzoctrXRD5KXBt02KoMoskmjTwQY+YRKtB+r4XRex0TPw/Nd5x/VY3iv2ZquCRsA5oaz5poDKAxCPQjYx8R/bvwidHl/IQj6jpv2of8MHybFIkkIR6hHK57vNJ7p7NPmrrY1sopqMIxirRikklySWyEISF/l9jagTREI1QmOEAQ2IcOgwiEgZHiCGAhAwRJEliEQAySJIERRI1lPE8/AQiZDicJnFaUoy1O+ivCMeG0dEXbzb8zUyN+qhCMnyXHg6SgTSEI0RJQxi2ZlUfal8PzAI5nqX7DNIkzGsQj5ZjP/9k="/>
+                </div>
+                <div class="user-details">
+                    <h3>Chloe Grace Mortez</h3>
+                    <a href="update.html">Update info</a>
+                    <a href="view.html">View Activity</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="content-area">
+            <div class="side-column">
+                <div class="widget-box intro">
+                    <div class="head">
+                        <div class="widget-icon-container">
+                            <div class="widget-icon"> <i class="fa fa-globe" aria-hidden="true"></i> </div>
+                        </div>
+                        <div class="widget-title"> Intro </div>
+                    </div>
+                    <div class="body">
+                        <h6> </h6>
+                        <p> </p>
+                        <p> </p>
+                        <a href="#"> Update Info</a>
+                    </div>
+                </div>
+                <div class="widget-box photos">
+                    <div class="head">
+                        <div class="widget-icon-container">
+                            <div class="widget-icon"> <i class="fa fa-globe" aria-hidden="true"></i> </div>
+                        </div>
+                        <div class="widget-title"> Intro </div>
+                    </div>
+                    <div class="body">
+                       <div style="
+                       display: inline-block;
+                       float: left;
+                       width: 33.33%;
+                       height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                       -webkit-background-size: cover;
+                       -moz-background-size: cover;
+                       -o-background-size: cover;
+                       background-size: cover;"></div>
+                        <div style="
+                        display: inline-block;
+                        float: left;
+                        width: 33.33%;
+                        height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        background-size: cover;"></div>
+                         <div style="
+                         display: inline-block;
+                         float: left;
+                         width: 33.33%;
+                         height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                         -webkit-background-size: cover;
+                         -moz-background-size: cover;
+                         -o-background-size: cover;
+                         background-size: cover;"></div>
+                          <div style="
+                          display: inline-block;
+                          float: left;
+                          width: 33.33%;
+                          height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                          -webkit-background-size: cover;
+                          -moz-background-size: cover;
+                          -o-background-size: cover;
+                          background-size: cover;"></div>
+                           <div style="
+                           display: inline-block;
+                           float: left;
+                           width: 33.33%;
+                           height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                           -webkit-background-size: cover;
+                           -moz-background-size: cover;
+                           -o-background-size: cover;
+                           background-size: cover;"></div>
+                            <div style="
+                            display: inline-block;
+                            float: left;
+                            width: 33.33%;
+                            height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;"></div>
+                             <div style="
+                             display: inline-block;
+                             float: left;
+                             width: 33.33%;
+                             height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                             -webkit-background-size: cover;
+                             -moz-background-size: cover;
+                             -o-background-size: cover;
+                             background-size: cover;"></div>
+                              <div style="
+                              display: inline-block;
+                              float: left;
+                              width: 33.33%;
+                              height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                              -webkit-background-size: cover;
+                              -moz-background-size: cover;
+                              -o-background-size: cover;
+                              background-size: cover;"></div>
+                               <div style="
+                               display: inline-block;
+                               float: left;
+                               width: 33.33%;
+                               height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                               -webkit-background-size: cover;
+                               -moz-background-size: cover;
+                               -o-background-size: cover;
+                               background-size: cover;"></div>
+                       
+                    </div>
+                </div>
+                <div class="widget-box photos">
+                    <div class="head">
+                        <div class="widget-icon-container">
+                            <div class="widget-icon"> <i class="fa fa-globe" aria-hidden="true"></i> </div>
+                        </div>
+                        <div class="widget-title"> Intro </div>
+                    </div>
+                    <div class="body">
+                       <div style="
+                       display: inline-block;
+                       float: left;
+                       width: 33.33%;
+                       height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                       -webkit-background-size: cover;
+                       -moz-background-size: cover;
+                       -o-background-size: cover;
+                       background-size: cover;"></div>
+                        <div style="
+                        display: inline-block;
+                        float: left;
+                        width: 33.33%;
+                        height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                        -webkit-background-size: cover;
+                        -moz-background-size: cover;
+                        -o-background-size: cover;
+                        background-size: cover;"></div>
+                         <div style="
+                         display: inline-block;
+                         float: left;
+                         width: 33.33%;
+                         height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                         -webkit-background-size: cover;
+                         -moz-background-size: cover;
+                         -o-background-size: cover;
+                         background-size: cover;"></div>
+                          <div style="
+                          display: inline-block;
+                          float: left;
+                          width: 33.33%;
+                          height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                          -webkit-background-size: cover;
+                          -moz-background-size: cover;
+                          -o-background-size: cover;
+                          background-size: cover;"></div>
+                           <div style="
+                           display: inline-block;
+                           float: left;
+                           width: 33.33%;
+                           height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                           -webkit-background-size: cover;
+                           -moz-background-size: cover;
+                           -o-background-size: cover;
+                           background-size: cover;"></div>
+                            <div style="
+                            display: inline-block;
+                            float: left;
+                            width: 33.33%;
+                            height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                            -webkit-background-size: cover;
+                            -moz-background-size: cover;
+                            -o-background-size: cover;
+                            background-size: cover;"></div>
+                             <div style="
+                             display: inline-block;
+                             float: left;
+                             width: 33.33%;
+                             height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                             -webkit-background-size: cover;
+                             -moz-background-size: cover;
+                             -o-background-size: cover;
+                             background-size: cover;"></div>
+                              <div style="
+                              display: inline-block;
+                              float: left;
+                              width: 33.33%;
+                              height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                              -webkit-background-size: cover;
+                              -moz-background-size: cover;
+                              -o-background-size: cover;
+                              background-size: cover;"></div>
+                               <div style="
+                               display: inline-block;
+                               float: left;
+                               width: 33.33%;
+                               height: 110px; background: url(https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center; 
+                               -webkit-background-size: cover;
+                               -moz-background-size: cover;
+                               -o-background-size: cover;
+                               background-size: cover;"></div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="main-area">
+                <div class="widget-box submenu">
+                <ul>
+                    <li>
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        <span> timeline</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                        <span> about</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span> friends</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <span> photos</span>
+                    </li>
+                    <li>
+                        <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                       
+                    </li>
+                </ul>
+                </div>
+                <div class="widget-box post">
+                    <div class="head">
+                        <div class="user-img-container">
+
+                            <div class="user-img">
+                               
+                            </div>
+                        </div>
+                        
+                        <div class="post-info">
+                            <span class="user-info">
+                                <a href="#">Chloe Grace Maretz</a> shared a <a 
+                                href="#">link</a>.
+                            </span>  
+                            <span class="post-date">Feb 19 at 10:35 AM via Instagram</span>
+                        </div>
+                    </div>
+                    <div class="body">
+                      <div class="post-img">
+                          <img src="img/meme.jpg"alt="">
+                      </div>
+                      <div class="top-icons">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                        <span>
+                        <i class="fa fa-comments" aria-hidden="true"></i> 1
+                        </span>
+                    </div>
+                    <div class="post-comments">
+                        <div class="user-img">
+                            <img src="C:\Users\Andrew\Pictures\Pictures\beliver.jpg"alt="">
+                        </div>
+                        <div class="user-comment">
+                            <div class="user-info">
+                                <a href="">Andrew Booker</a>
+                                <span class="time"> 11:09 AM </span>
+                            </div>
+                            <p>
+                                Cause I know when that Hotline bling!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post-form">
+                        <div class="user-img">
+                            <img 
+                            src="C:\Users\Andrew\Pictures\Pictures\beliver.jpg"alt="">
+                        </div>
+                        <div class="form-info">
+                            <input type="text" placeholder="write a comment"/>
+                            <div class="icons">
+                                <i class="fa fa-camera" aria-hidden="true"></i>
+                                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+
+</html>
